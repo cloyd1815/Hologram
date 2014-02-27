@@ -1,7 +1,6 @@
 package me.cloyd1815.holo.commands;
 
 import me.cloyd1815.holo.util.Hologram;
-import net.minecraft.util.org.apache.commons.lang3.StringUtils;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -17,9 +16,9 @@ public class Add implements CommandExecutor {
 		if (commandLabel.equalsIgnoreCase("add")) {
 			if (args.length <= 0)
 				player.sendMessage("Incorrect syntax! /add message");
-			if (args.length >= 2) {
+			if (args.length >= 1) {
 				StringBuilder sb = new StringBuilder();
-				for (int i = 1; i < args.length; i++) {
+				for (int i = 0; i < args.length; i++) {
 					sb.append(args[i]);
 					if (i < args.length) {
 						sb.append(" ");
@@ -27,6 +26,7 @@ public class Add implements CommandExecutor {
 				}
 				new Hologram(sb.toString().replaceAll("&", "§")).show(player
 						.getLocation());
+				player.sendMessage("\"Sucess!\"");
 			}
 		}
 		return true;
