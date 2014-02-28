@@ -9,7 +9,7 @@ public class Main extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		plugin = this;
-		getCommand("add").setExecutor(new Add());
+		getCommand("holo").setExecutor(new Add());
 	}
 	
 	@Override
