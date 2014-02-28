@@ -3,12 +3,10 @@ package me.cloyd1815.holo.commands;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 
 import javax.imageio.ImageIO;
 
 import me.cloyd1815.holo.util.ImageChar;
-import me.cloyd1815.holo.util.ImageMessage;
 import me.cloyd1815.holo.util.NameTagMessage;
 import me.cloyd1815.holo.util.NameTagSpawner;
 
